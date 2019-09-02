@@ -753,7 +753,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5195171328658624223}
-  - component: {fileID: 7673312252924935659}
   - component: {fileID: 8536208358211837003}
   m_Layer: 0
   m_Name: LightningTurret
@@ -788,29 +787,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7673312252924935659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5195171328658624220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfd9dc8fd7f69e64d96ebc5f1e142ae0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upgrades: []
-  unlocked: 0
-  shootEffect: {fileID: 8690519657143704276, guid: cda1daf993daee64ba86520b478b10b6,
-    type: 3}
-  projectile: {fileID: 8690519657143704276, guid: cda1daf993daee64ba86520b478b10b6,
-    type: 3}
-  damage: 10
-  fireRate: 2
-  range: 30
-  firepoint: {fileID: 1846325925329192292}
-  pool: {fileID: 0}
 --- !u!208 &8536208358211837003
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1027,7 +1003,7 @@ PrefabInstance:
     - target: {fileID: 8963915939119972178, guid: 3e909d851b8d2c244b816f7d9aa3515d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3554622638499813792, guid: 3e909d851b8d2c244b816f7d9aa3515d,
         type: 3}
@@ -1084,16 +1060,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7835070203473009720, guid: 3e909d851b8d2c244b816f7d9aa3515d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9dccb8242bd1ce344bb02551eaa80c49, type: 2}
     - target: {fileID: 1417549995976545469, guid: 3e909d851b8d2c244b816f7d9aa3515d,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7835070203473009720, guid: 3e909d851b8d2c244b816f7d9aa3515d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dccb8242bd1ce344bb02551eaa80c49, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e909d851b8d2c244b816f7d9aa3515d, type: 3}
 --- !u!4 &610298306153535149 stripped
@@ -1113,6 +1089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LightningAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860873485958298921, guid: 19320b4ec7ae9db4dae24daeb5eedead,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2316498034801138651, guid: 19320b4ec7ae9db4dae24daeb5eedead,
         type: 3}

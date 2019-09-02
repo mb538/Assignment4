@@ -128,6 +128,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0862638236fd54685b3ae356656d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defeatedEffect: {fileID: 3343336560701122299, guid: 43218b89a257e4442a5fce09fe74c0f7,
+    type: 3}
   enemy: {fileID: 7386934103912576761}
-  maxHealth: 100
   agent: {fileID: -5096235925987455464}
+  maxHealth: 100
+  damage: 20
+  gold: 40

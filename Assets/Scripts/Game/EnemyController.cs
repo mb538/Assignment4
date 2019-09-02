@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     [Header("Unity Settings")]
+    public GameObject defeatedEffect;
     private Transform destination;
     public GameObject enemy;
     public NavMeshAgent agent;
@@ -40,10 +41,25 @@ public class EnemyController : MonoBehaviour
         {
             Defeated();
         }
+        if (agent.pathStatus == NavMeshPathStatus.PathInvalid)
+        {
+            print("Enemy has no valid path");
+           
+        }
+        if (agent.pathStatus == NavMeshPathStatus.PathPartial)
+        {
+            print("Unable to reach destination partial");
+        }
     }
+   
     private void Defeated()
     {
         gc.SetCurGold(gc.GetCurGold() + gold);
+        if(defeatedEffect != null)
+        {
+            GameObject effect = (GameObject)Instantiate(defeatedEffect, gameObject.transform.position, gameObject.transform.rotation);
+            Destroy(effect, 3f);
+        }
         Destroy(gameObject);
     }
     public void SetDest(Transform destination)

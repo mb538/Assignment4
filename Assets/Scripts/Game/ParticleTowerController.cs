@@ -25,7 +25,7 @@ public class ParticleTowerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pool = GameObject.Find("BulletObjectPool").GetComponent<ObjectPool>();
+        pool = GameObject.Find("ParticleObjectPool").GetComponent<ObjectPool>();
         coroutine = CountDown();
         StartCoroutine(coroutine);
         InvokeRepeating("SearchForTargets", 0f, 1f);

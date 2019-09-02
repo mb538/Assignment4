@@ -6644,10 +6644,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c613633a448afc45a9cbc776aa40f76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  startGold: 100
   goldCounter: {fileID: 0}
   healthCounter: {fileID: 0}
+  maxHealth: 100
+  startGold: 1000
 --- !u!4 &744506180
 Transform:
   m_ObjectHideFlags: 0
